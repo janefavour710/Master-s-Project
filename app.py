@@ -470,6 +470,43 @@ label, .stSelectbox label, .stTextArea label {
 }
 
 .stAlert { border-radius: 4px !important; font-family: var(--f-body) !important; }
+
+/* ── Mobile responsive ───────────────────────────────── */
+
+@media (max-width: 768px) {
+    .block-container { padding: 0 1rem 2rem !important; }
+
+    .ss-header {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        padding: 1.6rem 0 1.2rem;
+    }
+    .ss-right { text-align: left; }
+    .ss-word-spam { font-size: 2.4rem; }
+
+    .stTabs [data-baseweb="tab"] {
+        font-size: 0.6rem !important;
+        padding: 0.7rem 0.9rem !important;
+        letter-spacing: 0.08em !important;
+    }
+
+    .verdict-classification-spam,
+    .verdict-classification-ham { font-size: 2.8rem; }
+
+    .verdict-header { flex-direction: column; align-items: flex-start; }
+    .verdict-meta { text-align: left; }
+
+    .certainty-section { max-width: 100%; }
+
+    .pipeline { padding-left: 1rem; }
+}
+
+@media (max-width: 480px) {
+    .ss-word-spam { font-size: 2rem; }
+    .verdict-classification-spam,
+    .verdict-classification-ham { font-size: 2.2rem; }
+    .stTabs [data-baseweb="tab"] { padding: 0.6rem 0.7rem !important; }
+}
 </style>
 """
 
